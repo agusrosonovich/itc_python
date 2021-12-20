@@ -21,7 +21,7 @@ class Animal:
         self.num_legs = num_legs
 
     def __get_weight_kg_per_leg(self):
-        print(self.weight_kg/self.num_legs)
+        return self.weight_kg/self.num_legs
 
     def set_weight_kg(self, weight):
         self._weight_kg = weight
@@ -30,14 +30,22 @@ class Animal:
         return self._weight_kg
 
     def get_weight_grams_per_leg(self):
-        print(self._weight_kg/self.num_legs/0.001)
+        return self.__get_weight_kg_per_leg() / 0.001
 
 
-dog_caesar = Animal(10, 4)
+"""dog_caesar = Animal(10, 4)
 parrot_barney = Animal(1, 2)
 
 dog_caesar.get_weight_grams_per_leg()
 parrot_barney.get_weight_grams_per_leg()
+"""
+
+
+class Cat(Animal):
+    def __init__(self, weight_kg, num_legs=0, cat_color="", eyes_color=""):
+        super().__init__(weight_kg, num_legs)
+        self.cat_color = cat_color
+        self.eyes_color = eyes_color
 
 
 
