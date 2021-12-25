@@ -29,9 +29,9 @@ def print_string(word):
 
 
 def judge(word1, word2):
-    if(len(word1)>len(word2)):
+    if len(word1)>len(word2):
         print_string(word1)
-    elif len(word1)==len(word2):
+    elif len(word1) == len(word2):
         print("The two words have the same length" )
     else:
         print_string(word2)
