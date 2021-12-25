@@ -18,7 +18,7 @@ print(name)
 
 
 def is_long_string(word):
-    return len(word)>=10
+    return len(word) >= 10
 
 
 def print_string(word):
@@ -31,6 +31,8 @@ def print_string(word):
 def judge(word1, word2):
     if(len(word1)>len(word2)):
         print_string(word1)
+    elif len(word1)==len(word2):
+        print("The two words have the same length" )
     else:
         print_string(word2)
 

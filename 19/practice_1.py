@@ -11,18 +11,18 @@ for item in equipment:
 print("The item that appears the most in the  list is " + most_common_item)
 
 salaries = [1200, 2500, 1800, 1600, 1800, 700, 3200, 1500, 1300, 1300,  850, 1900]
-avg=0
-sum=0
-salaries_above_average=[]
-avg_salaries_above_average=0
-sum_of_salaries_above_average=0
+avg = 0
+sum = 0
+salaries_above_average = []
+avg_salaries_above_average = 0
+sum_of_salaries_above_average = 0
 
 for salary in salaries:
     sum += salary
-avg=sum/len(salaries)
+avg = sum/len(salaries)
 
 for salary in salaries:
-    if salary>avg:
+    if salary > avg:
         salaries_above_average.append(salary)
 
 for salary in salaries_above_average:
